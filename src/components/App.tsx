@@ -2,7 +2,6 @@ import React from 'react';
 import { Routes, Route } from "react-router-dom";
 import NavBar from './NavBar';
 import LandingPage from "./LandingPage";
-import About from "./About";
 import Projects from "./Projects";
 import Blog from './Blog';
 import Contact from './Contact';
@@ -15,7 +14,6 @@ function App() {
       <NavBar />
         <Routes>
           <Route path='/' element={<LandingPage />}/>
-          <Route path='/about' element={<About />}/>
           <Route path='/projects' element={<Projects />}/>
           <Route path='/blog' element={<Blog />}/>
           <Route path='/contact' element={<Contact />}/>
