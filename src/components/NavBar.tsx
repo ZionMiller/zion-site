@@ -5,7 +5,7 @@ import { Menu } from "semantic-ui-react"
 const NavBar = () => {
   return (
     <div>
-        <Menu>
+        <Menu color='red'>
             <Menu.Item>
                 <Link to='/'>Zion Miller</Link>
             </Menu.Item>

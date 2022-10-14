@@ -11,7 +11,7 @@ const Footer = () => {
     height: "100px",
     }}>
         
-    <Table  style={{backgroundColor: "#f0ead6", textAlign: "center"}}>
+    <Table  style={{backgroundColor: "#ded8ee", textAlign: "center", color: "white"}}>
     <Table.Body>
       <Table.Row>
         <Table.Cell>
