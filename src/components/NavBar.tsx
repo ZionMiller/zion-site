@@ -3,9 +3,18 @@ import { Link } from 'react-router-dom'
 import { Menu } from "semantic-ui-react"
 
 const NavBar = () => {
+    const styleNav = {
+      fontFamily: "Courier New",
+      backgroundColor: "#ded8ee",
+      color: "black",
+    }
+    const activeStyle = {
+        backgroundColor: "#ded8ee",
+        color: "black",
+    }
   return (
     <div>
-        <Menu color='red'>
+        <Menu style={styleNav} inverted tabular>
             <Menu.Item>
                 <Link to='/'>Zion Miller</Link>
             </Menu.Item>
