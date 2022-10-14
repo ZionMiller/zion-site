@@ -9,7 +9,7 @@ const Projects = () => {
         <Image
           floated='right'
           size='large'
-          src={require("../biobreak_logo.png")}
+          src={require("../Images/biobreak_logo.png")}
         />
         <Card.Meta>Biotech equity GUI</Card.Meta>
         <Card.Description>
@@ -38,7 +38,7 @@ const Projects = () => {
         <Image
           floated='right'
           size='medium'
-          src={require("../CodersKeys.png")}
+          src={require("../Images/CodersKeys.png")}
         />
         <Card.Meta>Coder Cheat Sheet</Card.Meta>
         <Card.Description>

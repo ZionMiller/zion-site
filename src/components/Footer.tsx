@@ -1,5 +1,5 @@
 import React from 'react'
-import { Table, Icon, Menu } from 'semantic-ui-react'
+import { Table, Icon, Menu, Image } from 'semantic-ui-react'
 
 const Footer = () => {
   return (
@@ -8,14 +8,18 @@ const Footer = () => {
     position: "fixed",
     bottom: "0",
     width: "100%",
-    height: "100px",
+    height: "120px",
     }}>
         
-    <Table  style={{backgroundColor: "#ded8ee", textAlign: "center", color: "white"}}>
+    <Table  style={{backgroundColor: "#ded8ee", textAlign: "center"}}>
     <Table.Body>
       <Table.Row>
         <Table.Cell>
-        Put language icons here
+        <Image
+            src={require("../Images/techs.png")}
+            circular
+            style={{height: "110px"}}
+        />
        </Table.Cell>
         <Table.Cell>
             About
