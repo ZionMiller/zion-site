@@ -4,7 +4,7 @@ import NavBar from './NavBar';
 import LandingPage from "./LandingPage";
 import Projects from "./Projects";
 import Blog from './Blog';
-import Contact from './Contact';
+import Resume from './Resume';
 import Footer from './Footer';
 import '../App.css';
 
@@ -16,7 +16,7 @@ function App() {
           <Route path='/' element={<LandingPage />}/>
           <Route path='/projects' element={<Projects />}/>
           <Route path='/blog' element={<Blog />}/>
-          <Route path='/contact' element={<Contact />}/>
+          <Route path='/resume' element={<Resume />}/>
         </Routes>
       <Footer />
     </div>

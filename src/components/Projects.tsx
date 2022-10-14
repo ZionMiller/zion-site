@@ -4,11 +4,11 @@ import { Card, Button, Image } from 'semantic-ui-react'
 const Projects = () => {
   return (
     <Card.Group>
-    <Card>
+    <Card style={{backgroundColor: "#e8eed8"}}>
       <Card.Content>
         <Image
           floated='right'
-          size='medium'
+          size='large'
           src={require("../biobreak_logo.png")}
         />
         <Card.Meta>Biotech equity GUI</Card.Meta>
@@ -33,7 +33,7 @@ const Projects = () => {
         </div>
       </Card.Content>
     </Card>
-    <Card>
+    <Card style={{backgroundColor: "#e8eed8"}}>
       <Card.Content>
         <Image
           floated='right'
@@ -46,6 +46,93 @@ const Projects = () => {
         </Card.Description>
         <Card.Description>
         <strong>Role</strong>: Ideation, front end functionality
+        </Card.Description>
+      </Card.Content>
+      <Card.Content extra>
+        <div className='ui three buttons' style={{backgroundColor: "#ded8ee"}}>
+          <Button basic color='black'>
+            View Demo
+          </Button>
+          <Button basic color='black'>
+            Test App
+          </Button>
+          <Button basic color='black'>
+            View Repo
+          </Button>
+        </div>
+      </Card.Content>
+    </Card>
+    <Card style={{backgroundColor: "#e8eed8"}}>
+      <Card.Content>
+        <Image
+          floated='right'
+          size='medium'
+        //   src={require("../CodersKeys.png")}
+        />
+        <Card.Meta>Placeholder</Card.Meta>
+        <Card.Description>
+        <strong>Description</strong>: Placeholder
+        </Card.Description>
+        <Card.Description>
+        <strong>Role</strong>: Placeholder
+        </Card.Description>
+      </Card.Content>
+      <Card.Content extra>
+        <div className='ui three buttons' style={{backgroundColor: "#ded8ee"}}>
+          <Button basic color='black'>
+            View Demo
+          </Button>
+          <Button basic color='black'>
+            Test App
+          </Button>
+          <Button basic color='black'>
+            View Repo
+          </Button>
+        </div>
+      </Card.Content>
+    </Card>
+    <Card style={{backgroundColor: "#e8eed8"}}>
+      <Card.Content>
+        <Image
+          floated='right'
+          size='medium'
+        //   src={require("../CodersKeys.png")}
+        />
+        <Card.Meta>Placeholder</Card.Meta>
+        <Card.Description>
+        <strong>Description</strong>: Placeholder
+        </Card.Description>
+        <Card.Description>
+        <strong>Role</strong>: Placeholder
+        </Card.Description>
+      </Card.Content>
+      <Card.Content extra>
+        <div className='ui three buttons' style={{backgroundColor: "#ded8ee"}}>
+          <Button basic color='black'>
+            View Demo
+          </Button>
+          <Button basic color='black'>
+            Test App
+          </Button>
+          <Button basic color='black'>
+            View Repo
+          </Button>
+        </div>
+      </Card.Content>
+    </Card>
+    <Card style={{backgroundColor: "#e8eed8"}}>
+      <Card.Content>
+        <Image
+          floated='right'
+          size='medium'
+        //   src={require("../CodersKeys.png")}
+        />
+        <Card.Meta>Placeholder</Card.Meta>
+        <Card.Description>
+        <strong>Description</strong>: Placeholder
+        </Card.Description>
+        <Card.Description>
+        <strong>Role</strong>: Placeholder
         </Card.Description>
       </Card.Content>
       <Card.Content extra>

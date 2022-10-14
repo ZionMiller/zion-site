@@ -25,7 +25,7 @@ const NavBar = () => {
                 <Link to='/blog'>Blog</Link>
             </Menu.Item>
             <Menu.Item>
-                <Link to='/contact'>contact</Link>
+                <Link to='/resume'>Resume</Link>
             </Menu.Item>
         </Menu>
     </div>
