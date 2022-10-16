@@ -1,31 +1,31 @@
 import React from 'react'
-import { Divider, Grid, Image, Segment, Menu, Icon } from 'semantic-ui-react'
+import { Divider, Grid, Image, Segment, Menu, Icon, Container, GridColumn, List } from 'semantic-ui-react'
 
 const LandingPage = () => {
   return (
     <div>
         <br></br>
-        <h2>
-            Software Engineer | Surfer | Unhealthyly Obsessed Watch Enthusiast 
-        </h2>
-        <br></br>
-            <Segment>
+        <Segment floated='left'>
             <Grid columns={2} relaxed='very' style={{backgroundColor: "#e8eed8"}}>
-            <Grid.Column style={{display: "flex", alignItems: "center"}}>
-                <p>
+                <GridColumn>
                 <Image
                     src={require("../Images/zion-prof.png")}
                     circular
                     centered
                     alt='profile pic'
                     size='large'
-                />
+                    />
+                </GridColumn>
+                <GridColumn>
+                    <h2>Software Engineer</h2>
+                    <h2>Surfer</h2>
+                    <h2>Unhealthyly Obsessed Watch Enthusiast</h2>
+                <br></br>
+                <p>
                 Equity Analyst & Entrepreneur turned full-stack software engineer. I am a recent Flatiron School graduate and am eager for opportunities to break into the tech industry. 
                 Open to any full-time opportunities in software engineering.
                 </p>
-            </Grid.Column>
-            <Grid.Column>
-                <h2>Contact & Socials</h2>
+                <br></br>
                 <Menu.Item
                     href="https://github.com/ZionMiller"
                     position="right"
@@ -59,9 +59,8 @@ const LandingPage = () => {
                 >
                     <Icon name="sticky note" size="big" /> Resume
                 </Menu.Item>
-            </Grid.Column>
+                </GridColumn>
             </Grid>
-            <Divider vertical></Divider>
         </Segment>
     </div>
   )
