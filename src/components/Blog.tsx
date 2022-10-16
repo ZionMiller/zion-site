@@ -18,18 +18,27 @@ const Blog = () => {
 
    const axios = require('axios').default
 
-//    useEffect(() => {
-//     axios.get(mediumURL)
-//     .then(details => {
-//         const image = details.data.feed.image
-//         const link = details.data.feed.link
-//         const blogs = details.data.feed.items
-//         const posts = blogs.filter(post => post.categories.length > 0)
+   useEffect(() => {
+    axios.get(mediumURL)
+    .then((details: { data: { feed: { image: any; link: any; items: any; }; }; }) => {
+        const image = details.data.feed.image
+        const link = details.data.feed.link
+        const blogs = details.data.feed.items
+        const posts = blogs.filter((post: { categories: string | any[]; }) => post.categories.length > 0)
 
-//         setProfile((p) => ({...p, profileUrl: link, profileImage: image}))
-//         setBlog({item: posts, isLoading: false})
-//     })
-//    })
+        setProfile((p) => ({...p, profileUrl: link, profileImage: image}))
+        setBlog({item: posts, isLoading: false, error: null})
+    })
+    // .catch(err => setBlog({error: err.message}))
+   }, [axios])
+
+//    if(blog.item) {
+//     return blog.item.map((post, index) => (
+//         <div key={index}>
+
+//         </div>
+//     ))
+//    }
 
   return (
     <div>Blog</div>

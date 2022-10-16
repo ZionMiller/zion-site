@@ -8,7 +8,7 @@ const Footer = () => {
     position: "fixed",
     bottom: "0",
     width: "100%",
-    height: "120px",
+    height: "130px",
     }}>
         
     <Table  style={{backgroundColor: "#ded8ee", textAlign: "center"}}>
@@ -17,20 +17,9 @@ const Footer = () => {
         <Table.Cell>
         <Image
             src={require("../Images/techs.png")}
-            circular
             style={{height: "110px"}}
         />
        </Table.Cell>
-        <Table.Cell>
-            About
-          <br></br>
-            Projects
-          <br></br>
-            Blog
-          <br></br>
-            Contact
-          <br></br>
-        </Table.Cell>
           <h3 style={{alignItems: "center"}}>Zion Miller</h3>
             <Menu.Item
             href="https://github.com/ZionMiller"

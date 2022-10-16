@@ -5,7 +5,7 @@ import { Menu } from "semantic-ui-react"
 const NavBar = () => {
     // come back to fix hover colors
     const styleNav = {
-      fontFamily: "Courier New",
+    //   fontFamily: "Courier New",
       backgroundColor: "#ded8ee",
       color: "black",
     }
