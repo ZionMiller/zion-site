@@ -1,30 +1,25 @@
 import React from 'react'
-import { Divider, Grid, Image, Segment, Menu, Icon, Container, GridColumn, List } from 'semantic-ui-react'
+import { Container, Image, Menu, Icon } from 'semantic-ui-react'
 
 const LandingPage = () => {
   return (
     <div>
         <br></br>
-        <Segment floated='left'>
-            <Grid columns={2} relaxed='very' style={{backgroundColor: "#e8eed8"}}>
-                <GridColumn>
-                <Image
-                    src={require("../Images/zion-prof.png")}
-                    circular
-                    centered
-                    alt='profile pic'
-                    size='large'
-                    />
-                </GridColumn>
-                <GridColumn>
+            <Image
+                src={require("../Images/zion-prof.png")}
+                circular
+                centered
+                alt='profile pic'
+                size='large'
+            />
                     <h2>Software Engineer</h2>
                     <h2>Surfer</h2>
-                    <h2>Unhealthyly Obsessed Watch Enthusiast</h2>
+                    <h2>Unhealthily Obsessed Watch Enthusiast</h2>
                 <br></br>
-                <p>
+                <Container>
                 Equity Analyst & Entrepreneur turned full-stack software engineer. I am a recent Flatiron School graduate and am eager for opportunities to break into the tech industry. 
                 Open to any full-time opportunities in software engineering.
-                </p>
+                </Container>
                 <br></br>
                 <Menu.Item
                     href="https://github.com/ZionMiller"
@@ -33,6 +28,7 @@ const LandingPage = () => {
                 >
                     <Icon name="github" size="big" /> Github
                 </Menu.Item>
+                
                 <Menu.Item
                     href="https://www.linkedin.com/in/zion-miller-b15344170/"
                     position="right"
@@ -59,9 +55,6 @@ const LandingPage = () => {
                 >
                     <Icon name="sticky note" size="big" /> Resume
                 </Menu.Item>
-                </GridColumn>
-            </Grid>
-        </Segment>
     </div>
   )
 }

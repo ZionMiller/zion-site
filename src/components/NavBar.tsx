@@ -17,16 +17,16 @@ const NavBar = () => {
     <div>
         <Menu style={styleNav} inverted tabular>
             <Menu.Item >
-                <Link to='/' style={{color: "black"}}>Zion Miller</Link>
+                <Link to='/' style={{color: "black"}}><h3>Zion Miller</h3></Link>
             </Menu.Item>
             <Menu.Item position='right'>
-                <Link to='/projects' style={{color: "black"}}>Projects</Link>
+                <Link to='/projects' style={{color: "black"}}><h3>Projects</h3></Link>
             </Menu.Item>
             <Menu.Item>
-                <Link to='/blog' style={{color: "black"}}>Blog</Link>
+                <Link to='/blog' style={{color: "black"}}><h3>Blog</h3></Link>
             </Menu.Item>
             <Menu.Item>
-                <Link to='/resume' style={{color: "black"}}>Resume</Link>
+                <Link to='/resume' style={{color: "black"}}><h3>Resume</h3></Link>
             </Menu.Item>
         </Menu>
     </div>
