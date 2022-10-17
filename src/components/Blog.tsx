@@ -41,7 +41,7 @@ const Blog = () => {
 //    }
 
   return (
-    <div>Blog</div>
+    <div style={{alignContent: "center"}}>Blog Feed coming soon!</div>
   )
 }
 
