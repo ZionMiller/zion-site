@@ -6,45 +6,17 @@ const Footer = () => {
     <div style=
     {{
     position: "fixed",
-    bottom: "0",
-    width: "100%",
-    height: "130px",
+    left: 0,
+    bottom: 0,
+    right: 0,
+    backgroundColor: "#ded8ee"
     }}>
-        
-    <Table  style={{backgroundColor: "#ded8ee", textAlign: "center"}}>
-    <Table.Body>
-      <Table.Row>
-        <Table.Cell>
+        <h3>Technologies Used</h3>
         <Image
             src={require("../Images/techs.png")}
-            style={{height: "110px"}}
+            style={{position: "relative", height: "80px", display: "block", marginLeft: "auto", marginRight: "auto"}}
+
         />
-       </Table.Cell>
-          <h3 style={{alignItems: "center"}}>Zion Miller</h3>
-            <Menu.Item
-            href="https://github.com/ZionMiller"
-            position="right"
-            target="_blank"
-          >
-            <Icon name="github" size="big" />
-          </Menu.Item>
-          <Menu.Item
-            href="https://www.linkedin.com/in/zion-miller-b15344170/"
-            position="right"
-            target="_blank"
-          >
-            <Icon name="linkedin" size="big" />
-          </Menu.Item>
-          <Menu.Item
-            href="https://medium.com/@zionmiller"
-            position="right"
-            target="_blank"
-          >
-            <Icon name="medium" size="big" />
-        </Menu.Item>
-      </Table.Row>
-    </Table.Body>
-  </Table>
 </div>
   )
 }

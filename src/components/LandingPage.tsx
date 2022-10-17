@@ -25,6 +25,7 @@ const LandingPage = () => {
                     href="https://github.com/ZionMiller"
                     position="right"
                     target="_blank"
+                    style={{ display: "inlineBlock", marginRight: "25px"}}
                 >
                     <Icon name="github" size="big" /> Github
                 </Menu.Item>
@@ -33,6 +34,7 @@ const LandingPage = () => {
                     href="https://www.linkedin.com/in/zion-miller-b15344170/"
                     position="right"
                     target="_blank"
+                    style={{ display: "inlineBlock", marginRight: "25px"}}
                 >
                     <Icon name="linkedin" size="big" /> Linkedin
                 </Menu.Item>
@@ -40,6 +42,7 @@ const LandingPage = () => {
                     href="https://mobile.twitter.com/zion_code"
                     position="right"
                     target="_blank"
+                    style={{ display: "inlineBlock", marginRight: "25px"}}
                 >
                     <Icon name="twitter" size="big" /> Twitter
                 </Menu.Item>
@@ -47,11 +50,13 @@ const LandingPage = () => {
                     href="mailto:zionmillerbusiness@gmail.com"
                     position="right"
                     target="_blank"
+                    style={{ display: "inlineBlock", marginRight: "25px"}}
                 >
                     <Icon name="mail" size="big" /> Email
                 </Menu.Item>
                 <Menu.Item
                     href="/resume"
+                    style={{ display: "inlineBlock", marginRight: "25px"}}
                 >
                     <Icon name="sticky note" size="big" /> Resume
                 </Menu.Item>

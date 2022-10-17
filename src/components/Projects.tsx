@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Button, Image } from 'semantic-ui-react'
+import { Card, Button, Image, Menu, Icon } from 'semantic-ui-react'
 
 const Projects = () => {
   return (
@@ -49,104 +49,13 @@ const Projects = () => {
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <div className='ui three buttons' style={{backgroundColor: "#ded8ee"}}>
-          <Button basic color='black'>
-            View Demo
-          </Button>
-          <Button basic color='black'>
-            Test App
-          </Button>
-          <Button basic color='black'>
-            View Repo
-          </Button>
-        </div>
-      </Card.Content>
-    </Card>
-    <Card style={{backgroundColor: "#e8eed8"}}>
-      <Card.Content>
-        <Image
-          floated='right'
-          size='medium'
-        //   src={require("../CodersKeys.png")}
-        />
-        <Card.Meta>Placeholder</Card.Meta>
-        <Card.Description>
-        <strong>Description</strong>: Placeholder
-        </Card.Description>
-        <Card.Description>
-        <strong>Role</strong>: Placeholder
-        </Card.Description>
-      </Card.Content>
-      <Card.Content extra>
-        <div className='ui three buttons' style={{backgroundColor: "#ded8ee"}}>
-          <Button basic color='black'>
-            View Demo
-          </Button>
-          <Button basic color='black'>
-            Test App
-          </Button>
-          <Button basic color='black'>
-            View Repo
-          </Button>
-        </div>
-      </Card.Content>
-    </Card>
-    <Card style={{backgroundColor: "#e8eed8"}}>
-      <Card.Content>
-        <Image
-          floated='right'
-          size='medium'
-        //   src={require("../CodersKeys.png")}
-        />
-        <Card.Meta>Placeholder</Card.Meta>
-        <Card.Description>
-        <strong>Description</strong>: Placeholder
-        </Card.Description>
-        <Card.Description>
-        <strong>Role</strong>: Placeholder
-        </Card.Description>
-      </Card.Content>
-      <Card.Content extra>
-        <div className='ui three buttons' style={{backgroundColor: "#ded8ee"}}>
-          <Button basic color='black'>
-            View Demo
-          </Button>
-          <Button basic color='black'>
-            Test App
-          </Button>
-          <Button basic color='black'>
-            View Repo
-          </Button>
-        </div>
-      </Card.Content>
-    </Card>
-    <Card style={{backgroundColor: "#e8eed8"}}>
-      <Card.Content>
-        <Image
-          floated='right'
-          size='medium'
-        //   src={require("../CodersKeys.png")}
-        />
-        <Card.Meta>Placeholder</Card.Meta>
-        <Card.Description>
-        <strong>Description</strong>: Placeholder
-        </Card.Description>
-        <Card.Description>
-        <strong>Role</strong>: Placeholder
-        </Card.Description>
-      </Card.Content>
-      <Card.Content extra>
-        <div className='ui three buttons' style={{backgroundColor: "#ded8ee"}}>
-          <Button basic color='black'>
-            View Demo
-          </Button>
-          <Button basic color='black'>
-            Test App
-          </Button>
-          <Button basic color='black'>
-            View Repo
-          </Button>
-        </div>
+        <Menu.Item
+            href="https://github.com/nickwarren47/phase2-react-project"
+            // position="right"
+            target="_blank"
+        >
+            <Icon name="github" size="large" /> View Github
+        </Menu.Item>
       </Card.Content>
     </Card>
   </Card.Group>
