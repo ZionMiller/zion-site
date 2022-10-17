@@ -3,7 +3,7 @@ import { Card, Button, Image, Menu, Icon } from 'semantic-ui-react'
 
 const Projects = () => {
   return (
-    <Card.Group>
+    <Card.Group itemsPerRow={5}>
     <Card style={{backgroundColor: "#e8eed8"}}>
       <Card.Content>
         <Image
@@ -13,32 +13,100 @@ const Projects = () => {
         />
         <Card.Meta>Biotech equity GUI</Card.Meta>
         <Card.Description>
-        <strong>Description</strong>: Steve wants to add you to the group 
+        <strong>Description</strong>: BioBreak helps biotech investors save time with novel data visualizations which contain KPI's previously burried deep in SEC filings, clinical trials and more. What used to take countless tabs and hours of meticulous reading can now be done at the click of a button.
         </Card.Description>
         <Card.Description>
-        <strong>Role</strong>: Sole developer
+            <br></br>
+        <strong>Role</strong>: Sole developer (React Frontend, Rails Backend)
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <div className='ui three buttons' style={{backgroundColor: "#ded8ee"}}>
-          <Button basic color='black'>
-            View Demo
-          </Button>
-          <Button basic color='black'>
-            Test App
-          </Button>
-          <Button basic color='black'>
-            View Repo
-          </Button>
-        </div>
+        <Menu.Item
+                href="https://biobreak.herokuapp.com/snapshot"
+                // position="right"
+                target="_blank"
+                style={{marginRight: "15px"}}
+        >
+                <Icon name="computer" size="large" /> Test App
+        </Menu.Item>
+        <Menu.Item
+            href="https://github.com/ZionMiller/biobreak"
+            // position="right"
+            target="_blank"
+        >
+            <Icon name="github" size="large" /> View Repo
+        </Menu.Item>
       </Card.Content>
     </Card>
+
     <Card style={{backgroundColor: "#e8eed8"}}>
       <Card.Content>
         <Image
           floated='right'
           size='medium'
-          src={require("../Images/CodersKeys.png")}
+          src={require("../Images/Flights.png")}
+        />
+        <Card.Meta>Flight Finder</Card.Meta>
+        <Card.Description>
+        <strong>Description</strong>: Flight Finder ranks cheapest flights to a desired destination based on surrounding airports in a specified circumfrance.
+        </Card.Description>
+        <br></br>
+        <Card.Description>
+        <strong>Role</strong>: Ideation, front end functionality
+        </Card.Description>
+      </Card.Content>
+      <Card.Content extra>
+        <Menu.Item
+            href="https://github.com/ZionMiller/flight-positioning-app"
+            // position="right"
+            target="_blank"
+        >
+            <Icon name="github" size="large" /> View Repo
+        </Menu.Item>
+      </Card.Content>
+    </Card>
+
+    <Card style={{backgroundColor: "#e8eed8"}}>
+      <Card.Content>
+        <Image
+          floated='right'
+          size='medium'
+          src={require("../Images/CardGamee.png")}
+        />
+        <Card.Meta>Card Game</Card.Meta>
+        <Card.Description>
+        <strong>Description</strong>: A project built in a week to emulate Hearthstone basic game play with real world characters such as a baby versus the IRS. The project was built using React and Rails.
+        </Card.Description>
+        <br></br>
+        <Card.Description>
+        <strong>Role</strong>: Front end engineer
+        </Card.Description>
+      </Card.Content>
+      <Card.Content extra>
+        <Menu.Item
+            href="https://github.com/Garret-Gallant/Phase-3-Project-Backend"
+            // position="right"
+            target="_blank"
+            style={{marginRight: "15px"}}
+        >
+            <Icon name="github" size="large" /> Backend
+        </Menu.Item>
+        <Menu.Item
+            href="https://github.com/ZionMiller/phase-3-project-front-end-"
+            // position="right"
+            target="_blank"
+        >
+            <Icon name="github" size="large" /> Frontend
+        </Menu.Item>
+      </Card.Content>
+    </Card>
+
+    <Card style={{backgroundColor: "#e8eed8"}}>
+      <Card.Content>
+        <Image
+          floated='right'
+          size='medium'
+          src={require("../Images/coderkeys.png")}
         />
         <Card.Meta>Coder Cheat Sheet</Card.Meta>
         <Card.Description>
@@ -54,10 +122,65 @@ const Projects = () => {
             // position="right"
             target="_blank"
         >
-            <Icon name="github" size="large" /> View Github
+            <Icon name="github" size="large" /> View Repo
         </Menu.Item>
       </Card.Content>
     </Card>
+
+    <Card style={{backgroundColor: "#e8eed8"}}>
+      <Card.Content>
+        <Image
+          floated='right'
+          size='medium'
+          src={"https://i.ibb.co/Wfn9rHr/tumblr-mfoibvy2v41rfjowdo1-500.gif"}
+        />
+        <Card.Meta>Ghibli Film Reviews</Card.Meta>
+        <Card.Description>
+        <strong>Description</strong>: Consoldated details and reviews on all things Studio Ghibli
+        </Card.Description>
+        <Card.Description>
+            <br></br>
+        <strong>Role</strong>: Front end engineer
+        </Card.Description>
+      </Card.Content>
+      <Card.Content extra>
+        <Menu.Item
+            href="https://github.com/ZionMiller/ghibli-project"
+            // position="right"
+            target="_blank"
+        >
+            <Icon name="github" size="large" /> View Repo
+        </Menu.Item>
+      </Card.Content>
+    </Card>
+
+    <Card style={{backgroundColor: "#e8eed8"}}>
+      <Card.Content>
+        <Image
+          floated='right'
+          size='medium'
+          src={require("../Images/Flashcards.png")}
+        />
+        <Card.Meta>Flashcard App</Card.Meta>
+        <Card.Description>
+        <strong>Description</strong>: Flashcard app designed to help myself and fellow Flatiron students study our first phase of JavaScript
+        </Card.Description>
+        <Card.Description>
+            <br></br>
+        <strong>Role</strong>: Front end engineer
+        </Card.Description>
+      </Card.Content>
+      <Card.Content extra>
+        <Menu.Item
+            href="https://github.com/ZionMiller/Flatiron-flash-cards"
+            // position="right"
+            target="_blank"
+        >
+            <Icon name="github" size="large" /> View Repo
+        </Menu.Item>
+      </Card.Content>
+    </Card>
+
   </Card.Group>
   )
 }

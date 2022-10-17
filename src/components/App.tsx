@@ -24,8 +24,6 @@ function App() {
     .then(mediumRes => setArticles(mediumRes.items))
 }, [])
 
-console.log(articles[0])
-
   return (
     <div className="App">
       <NavBar />

@@ -16,7 +16,6 @@ const Blog: React.FC<mediumProps> = ({thumbnail, title, description, link}) => {
     const buttonStyle = {backgroundColor: "#ded8ee"}
 
 return (
-    // <div style={{alignContent: "center"}}>Blog Feed coming soon!</div>
     <Card style={cardStyle}>
         <Card.Content>
             <Image src={thumbnail}></Image>
