@@ -5,11 +5,12 @@ const Footer = () => {
   return (
     <div style=
     {{
+    // fontSize: "small",
     position: "fixed",
     left: 0,
     bottom: 0,
     right: 0,
-    backgroundColor: "#ded8ee"
+    // backgroundColor: "#ded8ee"
     }}>
         <h3>Technologies Used</h3>
         <Image
