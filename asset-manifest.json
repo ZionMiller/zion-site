@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/zion-site/static/css/main.58d62336.css",
+    "main.js": "/zion-site/static/js/main.c0134327.js",
+    "static/js/787.5ba61ebc.chunk.js": "/zion-site/static/js/787.5ba61ebc.chunk.js",
+    "static/media/zion-prof.png": "/zion-site/static/media/zion-prof.5fdcbdfba13610346121.png",
+    "static/media/coderkeys.png": "/zion-site/static/media/coderkeys.9fac4268e5afc703b2a6.png",
+    "static/media/Flashcards.png": "/zion-site/static/media/Flashcards.474c4ae691581918272b.png",
+    "static/media/CardGamee.png": "/zion-site/static/media/CardGamee.672dae32f018be2797d3.png",
+    "static/media/Flights.png": "/zion-site/static/media/Flights.f1375537df2ebdcb2e4d.png",
+    "static/media/techs.png": "/zion-site/static/media/techs.9ba2f6b595db9002c73d.png",
+    "static/media/biobreak_logo.png": "/zion-site/static/media/biobreak_logo.3471c8b050ffe5be6cc9.png",
+    "index.html": "/zion-site/index.html",
+    "main.58d62336.css.map": "/zion-site/static/css/main.58d62336.css.map",
+    "main.c0134327.js.map": "/zion-site/static/js/main.c0134327.js.map",
+    "787.5ba61ebc.chunk.js.map": "/zion-site/static/js/787.5ba61ebc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58d62336.css",
+    "static/js/main.c0134327.js"
+  ]
+}
