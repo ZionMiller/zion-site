@@ -14,11 +14,7 @@ function App() {
 
   const [articles, setArticles] = useState<any[]>([])
 
-  // interface mediumBlogDetails {
-  //   title:
-  //   description:
-  //   link:
-  // }
+  const regex = /(<([^>]+)>)/ig;
 
   const mediumURL = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@zionmiller";
 
@@ -44,7 +40,7 @@ console.log(articles[0])
                 <Blog 
                   thumbnail={article.thumbnail}
                   title={article.title}
-                  description={article.description.substring(4, 100)}
+                  description={article.description.substring(0, 150).replace(regex, '')}
                   link={article.link}
                 />
               ))         

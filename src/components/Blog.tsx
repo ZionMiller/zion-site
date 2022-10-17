@@ -21,7 +21,7 @@ return (
         <Card.Content>
             <Image src={thumbnail}></Image>
             <h1>{title}</h1>
-            <h3>{description}</h3>
+            <h3>{description}...</h3>
             <Button style={buttonStyle} href={link} target="_blank" rel="noopener noreferrer">Read Article</Button>
         </Card.Content>
     </Card>
