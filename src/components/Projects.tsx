@@ -52,7 +52,7 @@ const Projects = () => {
         </Card.Description>
         <br></br>
         <Card.Description>
-        <strong>Role</strong>: Ideation, front and backend end engineer
+        <strong>Role</strong>: Ideation, full stack engineer
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
@@ -79,7 +79,7 @@ const Projects = () => {
         </Card.Description>
         <br></br>
         <Card.Description>
-        <strong>Role</strong>: Front and back end engineer
+        <strong>Role</strong>: full stack engineer
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
@@ -113,7 +113,7 @@ const Projects = () => {
         <strong>Description</strong>: One stop shop for snippets and shortcuts 
         </Card.Description>
         <Card.Description>
-        <strong>Role</strong>: Ideation, front end functionality
+        <strong>Role</strong>: Ideation, front end engineer
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
