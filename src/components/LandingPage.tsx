@@ -61,7 +61,23 @@ const LandingPage = () => {
                 >
                     <Icon name="sticky note" size="big" /> Resume
                 </Menu.Item>
-            <Footer />
+            {/* <Footer /> */}
+    <div style=
+        {{
+            // fontSize: "small",
+            position: "fixed",
+            left: 0,
+            bottom: 0,
+            right: 0,
+            backgroundColor: "#ded8ee"
+        }}>
+         <h3>Technologies Used</h3>
+             <Image
+                src={require("../Images/techs.png")}
+                style={{position: "relative", height: "80px", display: "block", marginLeft: "auto", marginRight: "auto"}}
+
+            />
+    </div>
     </div>
   )
 }
