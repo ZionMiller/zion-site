@@ -48,7 +48,7 @@ const Projects = () => {
         />
         <Card.Meta>Flight Finder</Card.Meta>
         <Card.Description>
-        <strong>Description</strong>: Flight Finder ranks cheapest flights to a desired destination based on surrounding airports in a specified circumfrance.
+        <strong>Description</strong>: Flight Finder ranks the cheapest flights to the desired destination based on surrounding airports in a specified circumference
         </Card.Description>
         <br></br>
         <Card.Description>
@@ -75,7 +75,7 @@ const Projects = () => {
         />
         <Card.Meta>Card Game</Card.Meta>
         <Card.Description>
-        <strong>Description</strong>: A project built in a week to emulate Hearthstone basic game play with real world characters such as a baby versus the IRS. The project was built using React and Rails.
+        <strong>Description</strong>: A project built in a week to emulate Hearthstone basic gameplay with real-world characters such as a baby versus the IRS. The project was built using React and Rails
         </Card.Description>
         <br></br>
         <Card.Description>
@@ -110,7 +110,7 @@ const Projects = () => {
         />
         <Card.Meta>Coder Cheat Sheet</Card.Meta>
         <Card.Description>
-        <strong>Description</strong>: One stop shop for snippets and shortcuts 
+        <strong>Description</strong>: One-stop shop for snippets and shortcuts 
         </Card.Description>
         <Card.Description>
         <strong>Role</strong>: Ideation, front end engineer
@@ -136,7 +136,7 @@ const Projects = () => {
         />
         <Card.Meta>Ghibli Film Reviews</Card.Meta>
         <Card.Description>
-        <strong>Description</strong>: Consoldated details and reviews on all things Studio Ghibli
+        <strong>Description</strong>: Consolidated details and reviews on all things Studio Ghibli
         </Card.Description>
         <Card.Description>
             <br></br>

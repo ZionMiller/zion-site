@@ -2,6 +2,8 @@ import React from 'react'
 import Footer from './Footer';
 import { Container, Image, Menu, Icon } from 'semantic-ui-react'
 
+// Fix resume redirect for production copy
+
 const LandingPage = () => {
   return (
     <div>
@@ -13,9 +15,9 @@ const LandingPage = () => {
                 alt='profile pic'
                 size='large'
             />
-                    <h2>Software Engineer</h2>
-                    <h2>Surfer</h2>
-                    <h2>Unhealthily Obsessed Watch Enthusiast</h2>
+                    <h3>Software Engineer</h3>
+                    <h3>Surfer</h3>
+                    <h3>Unhealthily Obsessed Watch Enthusiast</h3>
                 <br></br>
                 <Container>
                 Equity Analyst & Entrepreneur turned full-stack software engineer. I am a recent Flatiron School graduate and am eager for opportunities to break into the tech industry. 
