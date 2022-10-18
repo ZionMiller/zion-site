@@ -66,7 +66,7 @@ const LandingPage = () => {
     <div style=
         {{
             // fontSize: "small",
-            position: "fixed",
+            position: "absolute",
             left: 0,
             bottom: 0,
             right: 0,
