@@ -7,7 +7,6 @@ import LandingPage from "./LandingPage";
 import Projects from "./Projects";
 import Blog from './Blog';
 import Resume from './Resume';
-import Footer from './Footer';
 import '../App.css';
 
 function App() {
@@ -49,7 +48,6 @@ function App() {
           }/>
           <Route path='/resume' element={<Resume />}/>
         </Routes>
-      <Footer />
     </div>
   );
 }

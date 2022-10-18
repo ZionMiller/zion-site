@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer';
 import { Container, Image, Menu, Icon } from 'semantic-ui-react'
 
 const LandingPage = () => {
@@ -60,6 +61,7 @@ const LandingPage = () => {
                 >
                     <Icon name="sticky note" size="big" /> Resume
                 </Menu.Item>
+            <Footer />
     </div>
   )
 }
