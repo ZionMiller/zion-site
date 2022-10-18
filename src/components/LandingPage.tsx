@@ -62,6 +62,7 @@ const LandingPage = () => {
                     <Icon name="sticky note" size="big" /> Resume
                 </Menu.Item>
             {/* <Footer /> */}
+            <br></br>
     <div style=
         {{
             // fontSize: "small",
