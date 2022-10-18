@@ -13,7 +13,7 @@ const Projects = () => {
         />
         <Card.Meta>Biotech equity GUI</Card.Meta>
         <Card.Description>
-        <strong>Description</strong>: BioBreak helps biotech investors save time with novel data visualizations which contain KPI's previously burried deep in SEC filings, clinical trials and more. What used to take countless tabs and hours of meticulous reading can now be done at the click of a button.
+        <strong>Description</strong>: BioBreak helps biotech investors save time with novel data visualizations containing KPIs buried deep in SEC filings, clinical trials, and more. What used to take countless tabs and hours of careful reading can now be done at the click of a button.
         </Card.Description>
         <Card.Description>
             <br></br>
@@ -52,7 +52,7 @@ const Projects = () => {
         </Card.Description>
         <br></br>
         <Card.Description>
-        <strong>Role</strong>: Ideation, front end functionality
+        <strong>Role</strong>: Ideation, front and backend end engineer
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
@@ -79,7 +79,7 @@ const Projects = () => {
         </Card.Description>
         <br></br>
         <Card.Description>
-        <strong>Role</strong>: Front end engineer
+        <strong>Role</strong>: Front and back end engineer
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
