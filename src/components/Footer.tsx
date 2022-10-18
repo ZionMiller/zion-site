@@ -5,11 +5,11 @@ const Footer = () => {
   return (
     <div style=
     {{
-    // fontSize: "small",
-    position: "fixed",
-    left: 0,
-    bottom: 0,
-    right: 0,
+    bottom: "0",
+    left: "0",
+    position: "relative", //changed to relative from fixed also works if position is not there
+    marginTop: "25px",
+    width: "100%",
     backgroundColor: "#ded8ee"
     }}>
         <h3>Technologies Used</h3>
