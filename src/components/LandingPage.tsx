@@ -58,7 +58,7 @@ const LandingPage = () => {
                     <Icon name="mail" size="big" /> Email
                 </Menu.Item>
                 <Menu.Item
-                    href="/resume"
+                    href="https://zion-miller.com/resume"
                     style={{ display: "inlineBlock", marginRight: "25px"}}
                 >
                     <Icon name="sticky note" size="big" /> Resume

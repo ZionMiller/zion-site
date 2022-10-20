@@ -16,7 +16,7 @@ const NavBar = () => {
     }
   return (
     <div>
-        <Menu style={styleNav} inverted tabular>
+        <Menu style={styleNav} inverted >
             <Menu.Item >
                 <Link to='/' style={{color: "black"}}><h3>Zion Miller</h3></Link>
             </Menu.Item>
