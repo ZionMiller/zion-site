@@ -8,6 +8,7 @@ const NavBar = () => {
     //   fontFamily: "Courier New",
       backgroundColor: "#ded8ee",
       color: "black",
+      width: "100%",
     }
     const activeStyle = {
         backgroundColor: "#ded8ee",

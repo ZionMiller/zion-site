@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useMediaQuery } from 'react-responsive'
 import { Routes, Route } from "react-router-dom";
 import { Card } from "semantic-ui-react";
 
@@ -14,14 +15,19 @@ function App() {
   const [articles, setArticles] = useState<any[]>([])
 
   const regex = /(<([^>]+)>)/ig;
-
   const mediumURL = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@zionmiller";
 
   useEffect(() => {
     fetch(mediumURL)
     .then(res => res.json())
     .then(mediumRes => setArticles(mediumRes.items))
-}, [])
+  }, [])
+
+  const isTabletOrPhone = useMediaQuery(
+    {query: '(orientation: portrait)'}
+  )
+
+  console.log(isTabletOrPhone)
 
   return (
     <div className="App">
@@ -30,7 +36,6 @@ function App() {
           <Route path='/' element={<LandingPage />}/>
           <Route path='/projects' element={<Projects />}/>
           <Route path='/blog' element={
-          
           <Card.Group itemsPerRow={4}>
             {
               articles.map((article) => (
@@ -42,7 +47,6 @@ function App() {
                 />
               ))         
             }
-        
          </Card.Group>
 
           }/>
