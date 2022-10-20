@@ -22,11 +22,12 @@ function App() {
     .then(res => res.json())
     .then(mediumRes => setArticles(mediumRes.items))
   }, [])
-
+  
   const isTabletOrPhone = useMediaQuery(
     {query: '(orientation: portrait)'}
   )
 
+  console.log(articles)
   console.log(isTabletOrPhone)
 
   return (
