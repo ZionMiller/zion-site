@@ -20,8 +20,7 @@ const LandingPage = () => {
                     <h3>Unhealthily Obsessed Watch Enthusiast</h3>
                 <br></br>
                 <Container>
-                Equity Analyst & Entrepreneur turned full-stack software engineer. I am a recent Flatiron School graduate and am eager for opportunities to break into the tech industry. 
-                Open to any full-time opportunities in software engineering.
+                Experienced in Ruby and JavaScript programming. Strong problem solver with 5 years experience applying my International Bachelor of Business Administration degree, intrapersonal skills, and technical expertise to help companies achieve operational objectives. 
                 </Container>
                 <br></br>
                 <Menu.Item

@@ -83,7 +83,7 @@ const Projects = () => {
                 />
                 <Card.Meta>Card Game</Card.Meta>
                 <Card.Description>
-                <strong>Description</strong>: A project built in a week to emulate Hearthstone basic gameplay with real-world characters such as a baby versus the IRS. The project was built using React and Rails
+                <strong>Description</strong>: A project built in a week to emulate Hearthstone basic gameplay with unlikely combatants such as a baby versus the IRS. The project was built using React and Rails
                 </Card.Description>
                 <br></br>
                 <Card.Description>
