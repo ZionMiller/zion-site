@@ -20,7 +20,7 @@ const LandingPage = () => {
                     <h3>Unhealthily Obsessed Watch Enthusiast</h3>
                 <br></br>
                 <Container>
-                Experienced in Ruby and JavaScript programming. Strong problem solver with 5 years experience applying my International Bachelor of Business Administration degree, intrapersonal skills, and technical expertise to help companies achieve operational objectives. 
+                Proficient in Ruby and JavaScript programming. Strong problem solver with 4 years experience applying my International Bachelor of Business Administration degree, interpersonal skills, and technical expertise to help companies achieve operational objectives
                 </Container>
                 <br></br>
                 <Menu.Item
