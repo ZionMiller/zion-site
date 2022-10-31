@@ -27,29 +27,28 @@ function App() {
     {query: '(orientation: portrait)'}
   )
 
-  console.log(articles)
-  console.log(isTabletOrPhone)
+  // console.log("Medium Articles", articles)
+  console.log("Is mobile or tablet?", isTabletOrPhone)
 
   return (
     <div className="App">
-      <NavBar />
+      <NavBar/>
         <Routes>
           <Route path='/' element={<LandingPage />}/>
           <Route path='/projects' element={<Projects />}/>
           <Route path='/blog' element={
-          <Card.Group itemsPerRow={4}>
-            {
-              articles.map((article) => (
-                <Blog 
-                  thumbnail={article.thumbnail}
-                  title={article.title}
-                  description={article.description.substring(0, 150).replace(regex, '')}
-                  link={article.link}
-                />
-              ))         
-            }
-         </Card.Group>
-
+            <Card.Group itemsPerRow={4}>
+              {
+                articles.map((article) => (
+                  <Blog 
+                    thumbnail={article.thumbnail}
+                    title={article.title}
+                    description={article.description.substring(0, 150).replace(regex, '')}
+                    link={article.link}
+                  />
+                ))         
+              }
+            </Card.Group>
           }/>
           <Route path='/resume' element={<Resume />}/>
         </Routes>
