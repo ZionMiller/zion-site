@@ -9,26 +9,25 @@ import Projects from "./Projects";
 import Blog from './Blog';
 import Resume from './Resume';
 import '../App.css';
+import { useBlogs } from '../hooks/useBlogs';
+
 
 function App() {
-
-  const [articles, setArticles] = useState<any[]>([])
+  const { articles } = useBlogs();
+  // const [articles, setArticles] = useState<any[]>([])
 
   const regex = /(<([^>]+)>)/ig;
-  const mediumURL = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@zionmiller";
+  // const mediumURL = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@zionmiller";
 
-  useEffect(() => {
-    fetch(mediumURL)
-    .then(res => res.json())
-    .then(mediumRes => setArticles(mediumRes.items))
-  }, [])
+  // useEffect(() => {
+  //   fetch(mediumURL)
+  //   .then(res => res.json())
+  //   .then(mediumRes => setArticles(mediumRes.items))
+  // }, [])
   
   const isTabletOrPhone = useMediaQuery(
     {query: '(orientation: portrait)'}
   )
-
-  // console.log("Medium Articles", articles)
-  console.log("Is mobile or tablet?", isTabletOrPhone)
 
   return (
     <div className="App">
@@ -38,7 +37,7 @@ function App() {
           <Route path='/projects' element={<Projects />}/>
           <Route path='/blog' element={
             <Card.Group itemsPerRow={4}>
-              {
+              {/* {
                 articles.map((article) => (
                   <Blog 
                     thumbnail={article.thumbnail}
@@ -47,7 +46,7 @@ function App() {
                     link={article.link}
                   />
                 ))         
-              }
+              } */}
             </Card.Group>
           }/>
           <Route path='/resume' element={<Resume />}/>
