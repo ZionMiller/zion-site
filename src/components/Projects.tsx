@@ -4,12 +4,6 @@ import { Card, Button, Image, Menu, Icon } from 'semantic-ui-react'
 
 const Projects = () => {
 
-    // going to come back and ternary screen size on media query, 
-    // for now centered works cross screen size
-    // const isTabletOrPhone = useMediaQuery(
-    //     {query: '(orientation: portrait)'}
-    // )
-
   return (
         <Card.Group centered marginTop="10px">
             <br></br>

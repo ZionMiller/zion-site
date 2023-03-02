@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { useMediaQuery } from 'react-responsive'
 import { Routes, Route } from "react-router-dom";
 import { Card } from "semantic-ui-react";
 
@@ -10,24 +9,23 @@ import Blog from './Blog';
 import Resume from './Resume';
 import '../App.css';
 import { useBlogs } from '../hooks/useBlogs';
+import { useDevice } from '../hooks/useDevice';
 
 
 function App() {
-  const { articles } = useBlogs();
-  // const [articles, setArticles] = useState<any[]>([])
+  // const { articles } = useBlogs();
+  const { isTabletOrPhone } = useDevice();
+  const [articles, setArticles] = useState<any[]>([])
 
   const regex = /(<([^>]+)>)/ig;
-  // const mediumURL = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@zionmiller";
+  const mediumURL = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@zionmiller";
 
-  // useEffect(() => {
-  //   fetch(mediumURL)
-  //   .then(res => res.json())
-  //   .then(mediumRes => setArticles(mediumRes.items))
-  // }, [])
+  useEffect(() => {
+    fetch(mediumURL)
+    .then(res => res.json())
+    .then(mediumRes => setArticles(mediumRes.items))
+  }, [])
   
-  const isTabletOrPhone = useMediaQuery(
-    {query: '(orientation: portrait)'}
-  )
 
   return (
     <div className="App">
@@ -36,8 +34,8 @@ function App() {
           <Route path='/' element={<LandingPage />}/>
           <Route path='/projects' element={<Projects />}/>
           <Route path='/blog' element={
-            <Card.Group itemsPerRow={4}>
-              {/* {
+            <Card.Group itemsPerRow={4}>           
+              {
                 articles.map((article) => (
                   <Blog 
                     thumbnail={article.thumbnail}
@@ -46,7 +44,7 @@ function App() {
                     link={article.link}
                   />
                 ))         
-              } */}
+              }
             </Card.Group>
           }/>
           <Route path='/resume' element={<Resume />}/>
