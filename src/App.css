@@ -37,3 +37,25 @@
     transform: rotate(360deg);
   }
 }
+
+.technology-stack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #ded8ee;
+  padding: 10px;
+}
+
+.technology-stack > div {
+  position: relative;
+  height: 69px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon-container {
+  font-size: 4rem; 
+  /* color: #e8eed8; still playing with color */
+}

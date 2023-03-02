@@ -11,11 +11,22 @@ import '../App.css';
 import { useBlogs } from '../hooks/useBlogs';
 import { useDevice } from '../hooks/useDevice';
 
+interface RSSFeedItem {
+  title: string;
+  pubDate: string;
+  link: string;
+  guid: string;
+  author: string;
+  thumbnail: string;
+  description: string;
+  content: string;
+  categories: string[];
+}
 
 function App() {
   // const { articles } = useBlogs();
   const { isTabletOrPhone } = useDevice();
-  const [articles, setArticles] = useState<any[]>([])
+  const [articles, setArticles] = useState<RSSFeedItem[]>([])
 
   const regex = /(<([^>]+)>)/ig;
   const mediumURL = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@zionmiller";
