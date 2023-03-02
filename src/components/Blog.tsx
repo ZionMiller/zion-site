@@ -13,15 +13,11 @@ interface mediumProps {
 const Blog: React.FC<mediumProps> = ({thumbnail, title, description, link}) => {
     
     const { isTabletOrPhone } = useDevice();
-    console.log(isTabletOrPhone)
 
     const cardStyle = {backgroundColor: "#e8eed8"}
     const imageStyle = {height: "165px"}
     const buttonStyle = {backgroundColor: "#ded8ee"}
 
-    // {isTabletOrPhone? itemsPerRow={1} : itemsPerRow={4}
-    // come back to refactor tablet ternary to just alter styling
-      
 return (
     <> 
     {isTabletOrPhone?

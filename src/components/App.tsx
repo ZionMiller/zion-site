@@ -4,12 +4,15 @@ import { Card } from "semantic-ui-react";
 
 import NavBar from './NavBar';
 import LandingPage from "./LandingPage";
-import Projects from "./Projects";
+import Projects from "./PastProjects";
 import Blog from './Blog';
 import Resume from './Resume';
 import '../App.css';
 import { useBlogs } from '../hooks/useBlogs';
 import { useDevice } from '../hooks/useDevice';
+import PastProjects from './PastProjects';
+import Project from './Project';
+import CurrentProject from './CurrentProject';
 
 interface RSSFeedItem {
   title: string;
@@ -43,7 +46,10 @@ function App() {
       <NavBar/>
         <Routes>
           <Route path='/' element={<LandingPage />}/>
-          <Route path='/projects' element={<Projects />}/>
+          <Route path='/project' element={<Project />} >
+            <Route path='/project/current' element={<CurrentProject />}/>
+            <Route path='/project/past' element={<PastProjects />}/>
+          </Route>
           <Route path='/blog' element={
             <Card.Group itemsPerRow={4}>           
               {
