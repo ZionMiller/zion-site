@@ -15,7 +15,7 @@ const CurrentProject = () => {
         </Menu.Item>
         <p>*We are launching a paid subscription so our code is private. Please contact me if you would like to explore the code base and or ask any questions about it!</p>
         <video controls width="640" height="360">
-            <source src="../Images/BB_Preview_2_23_23.mov"type="video/mov" />
+            <source src="../Images/BB_Preview_2_23_23.mp4"type="video/mp4" />
             Your browser does not support the video tag.
         </video>
     </div>
