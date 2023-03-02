@@ -4,6 +4,7 @@ import SubNav from './SubNav'
 import CurrentProject from './CurrentProject';
 import PastProjects from './PastProjects';
 import { Outlet } from 'react-router-dom';
+import { useDevice } from '../hooks/useDevice';
 
 interface ProjectProps {
     activeItem: string;
@@ -12,6 +13,7 @@ interface ProjectProps {
 
 const Project = () => {
     const [activeItem, setActiveItem] = useState<string>('project/current');
+    const { isTabletOrPhone } = useDevice();
 
     const renderActiveComponent = () => {
       if (activeItem === "project/current") {
@@ -24,7 +26,7 @@ const Project = () => {
     };
     
     return (
-      <div>
+      <div className='proj-containter'>
         <SubNav 
             activeItem={activeItem} 
             // onItemClick={(item) => setActiveItem(item)} 

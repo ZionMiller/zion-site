@@ -21,6 +21,8 @@ const Blog: React.FC<mediumProps> = ({thumbnail, title, description, link}) => {
 return (
     <> 
     {isTabletOrPhone?
+    <div>
+    <br></br>
         <Card.Group marginTop="10px" itemsPerRow={1}>
             <Card style={cardStyle}>
                 <Card.Content>
@@ -31,6 +33,7 @@ return (
                 </Card.Content>
             </Card>
         </Card.Group>    
+    </div>
     :
         <Card style={cardStyle}>
             <Card.Content>

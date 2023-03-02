@@ -59,3 +59,10 @@
   font-size: 4rem; 
   /* color: #e8eed8; still playing with color */
 }
+
+
+.proj {
+  position: fixed;
+  width: 100%;
+  }
+
