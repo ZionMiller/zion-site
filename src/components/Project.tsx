@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";
 import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { useDevice } from "../hooks/useDevice";
 import { Menu } from "semantic-ui-react";
 
 const Project = () => {
   const [activeItem, setActiveItem] = useState<string>("");
-  const { isTabletOrPhone } = useDevice();
   const navigate = useNavigate();
   const location = useLocation();
 

@@ -4,11 +4,9 @@ import { Card } from "semantic-ui-react";
 
 import NavBar from "./NavBar";
 import LandingPage from "./LandingPage";
-import Projects from "./PastProjects";
 import Blog from "./Blog";
 import Resume from "./Resume";
 import "../App.css";
-import { useBlogs } from "../hooks/useBlogs";
 import { useDevice } from "../hooks/useDevice";
 import PastProjects from "./PastProjects";
 import Project from "./Project";
@@ -28,7 +26,7 @@ interface RSSFeedItem {
 
 function App() {
   // const { articles } = useBlogs();
-  const { isTabletOrPhone } = useDevice();
+  // const { isTabletOrPhone } = useDevice();
   const [articles, setArticles] = useState<RSSFeedItem[]>([]);
 
   const regex = /(<([^>]+)>)/gi;

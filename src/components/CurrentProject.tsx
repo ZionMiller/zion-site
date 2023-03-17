@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Menu, Icon } from "semantic-ui-react";
 import { useDevice } from "../hooks/useDevice";
 
@@ -26,6 +25,7 @@ const CurrentProject = () => {
           </p>
           <div style={{ maxWidth: '600', maxHeight: '100%' }}>
           <iframe
+            title="BioBreak preview"
             src="https://www.youtube.com/embed/OSvQ1FB_MKY"
             frameBorder="0"
             allowFullScreen
@@ -51,6 +51,7 @@ const CurrentProject = () => {
           <iframe
             width="640"
             height="360"
+            title="BioBreak preview"
             src="https://www.youtube.com/embed/OSvQ1FB_MKY"
             frameBorder="0"
             allowFullScreen

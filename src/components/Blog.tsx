@@ -1,5 +1,4 @@
-import { useMediaQuery } from "react-responsive";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Card, Button, Image } from "semantic-ui-react";
 import { useDevice } from "../hooks/useDevice";
 
