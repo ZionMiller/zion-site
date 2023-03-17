@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   SiJavascript,
   SiTypescript,
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
