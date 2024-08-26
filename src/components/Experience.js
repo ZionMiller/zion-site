@@ -8,7 +8,7 @@ const Experience = () => {
           <br></br>
           <h2 className="text-3xl font-bold text-center mb-12">Experience</h2>
           <p className='flex items-center justify-center text-2xl mr-1 mb-8'>
-            Please <a href={`mailto:${profileData.email}`} className='text-blue-500'>contact me</a> for a more detailed copy of my resume
+            Please <a href={`mailto:${profileData.email}`} className='ml-2 mr-2 text-blue-500'>contact me</a> for a more detailed copy of my resume
           </p>
           <div className="relative">
             <div className="absolute inset-y-0 left-1/2 transform -translate-x-1/2 bg-gray-300 w-1 h-full xs:hidden"></div>
