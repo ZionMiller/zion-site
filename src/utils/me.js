@@ -2,6 +2,21 @@ const profileData = {
   name: "Zion Miller",
   bio: "Results-driven software engineer with 2+ years of experience collaborating in full-stack development, cloud computing, and AI integration. Proficient in designing, developing, and deploying scalable applications using modern technologies and cloud platforms.",
   email: "zionmillerbusiness@gmail.com",
+  topSkills: [
+    "Python", "JavaScript", "Postgresql", "AWS"
+  ],
+  languagesAndFrameworks: [
+    "Ruby", "React", "Redux", "NodeJs", "Flask",
+    "FastAPI", "HTML5", "CSS3", "TypeScript"
+  ],
+  cloudDatabasesAndManagement: [
+    "AWS", "Azure", "MongoDB", "MySQL", "Pinecone", "Redis",
+    "Elasticsearch"
+  ],
+  devOpsAIAndMisc: [
+    "Docker", "Kubernetes", "Terraform", "Cloudflare", "GitLab", "PyTorch",
+    "LangChain", "HuggingFace", "Git", "GitHub", "JIRA", "Confluence"
+  ],
   socials: {
     linkedIn: "https://www.linkedin.com/in/zion-miller-b15344170/",
     github: "https://github.com/ZionMiller",
@@ -17,7 +32,7 @@ const profileData = {
         github: "https://github.com/biobreak",
         youtube: "https://www.youtube.com/watch?v=OSvQ1FB_MKY"
       },
-      techUsed: ["React", "Python"]
+      techUsed: ["React", "Python", "Aws", "PostgreSQL", "MongoDB"]
     },
     flightFinder: {
       title: "Flight Finder",
@@ -25,7 +40,7 @@ const profileData = {
       links: {
         github: "https://github.com/ZionMiller/flight-positioning-app"
       },
-      techUsed: ["JavaScript", "Python"]
+      techUsed: ["React", "Rails", "PostgreSQL"]
     },
     cardGame: {
       title: "Card Game",
