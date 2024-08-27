@@ -6,7 +6,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-slate-300 w-full z-10 top-0">
+    <nav className="bg-gray-200 w-full z-10 top-0">
       <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3">
           <img
@@ -16,24 +16,24 @@ const Navbar = () => {
           />
         </a>
         <div className="hidden md:flex flex-grow items-center justify-center space-x-4">
-          <ul className="flex space-x-4">
+          <ul className="flex space-x-4 text-gray-800 text-xl">
             <li>
-              <a href="#about" className="text-white text-xl py-2 px-3 rounded hover:bg-blue-400 hover:text-white focus:ring-2 focus:ring-blue-300" aria-current="page">
+              <a href="#about" className="py-2 px-3 rounded hover:bg-blue-400 hover:text-white focus:ring-2 focus:ring-blue-300" aria-current="page">
                 About
               </a>
             </li>
             <li>
-              <a href="#experience" className="text-white text-xl py-2 px-3 rounded hover:bg-blue-400 hover:text-white focus:ring-2 focus:ring-blue-300">
+              <a href="#experience" className="py-2 px-3 rounded hover:bg-blue-400 hover:text-white focus:ring-2 focus:ring-blue-300">
                 Experience
               </a>
             </li>
             <li>
-              <a href="#projects" className="text-white text-xl py-2 px-3 rounded hover:bg-blue-400 hover:text-white focus:ring-2 focus:ring-blue-300">
+              <a href="#projects" className="py-2 px-3 rounded hover:bg-blue-400 hover:text-white focus:ring-2 focus:ring-blue-300">
                 Projects
               </a>
             </li>
             <li>
-              <a href="#articles" className="text-white text-xl py-2 px-3 rounded hover:bg-blue-400 hover:text-white focus:ring-2 focus:ring-blue-300">
+              <a href="#articles" className="py-2 px-3 rounded hover:bg-blue-400 hover:text-white focus:ring-2 focus:ring-blue-300">
                 Articles
               </a>
             </li>

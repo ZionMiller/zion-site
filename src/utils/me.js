@@ -1,6 +1,6 @@
 const profileData = {
   name: "Zion Miller",
-  bio: "Results-driven software engineer with 2+ years of experience collaborating in full-stack development, cloud computing, and AI integration. Proficient in designing, developing, and deploying scalable applications using modern technologies and cloud platforms.",
+  bio: "Results-driven software engineer with 2+ years of experience collaborating in full-stack development, cloud computing, and AI integration. I have a proven track record in designing, developing, deploying and maintaining scalable applications using modern technologies.",
   email: "zionmillerbusiness@gmail.com",
   topSkills: [
     "Python", "JavaScript", "Postgresql", "AWS"
@@ -25,6 +25,15 @@ const profileData = {
     leetcode: "https://leetcode.com/u/zioncode/"
   },
   projects: {
+    pulsely: {
+      title: "Pulseco.ai",
+      description: "Pulseco.ai is a SaaS product in production. Pulse provides sales intelligence, and relationship solutions. I have contributed across the stack here from Redux, to Ques, and a lot inbetween.",
+      links: {
+        deployed_url: "https://sales.pulseco.ai",
+        notes: "please contact for walkthrough"
+      },
+      techUsed: ["Private Repo"]
+    },
     biobreak: {
       title: "BioBreak",
       description: "BioBreak helps biotech investors save time with novel data visualizations that consolidate KPIs from SEC filings, clinical trials, and more, simplifying access to essential data with a single click.",
@@ -33,6 +42,40 @@ const profileData = {
         youtube: "https://www.youtube.com/watch?v=OSvQ1FB_MKY"
       },
       techUsed: ["React", "Python", "Aws", "PostgreSQL", "MongoDB"]
+    },
+    summary_co_pilot: {
+      title: "Summary Co Pilot",
+      description: "Summary Co Pilot uses Python, MongoDB, AWS Lambda, and OpenAI to summarize sales calls for different stakeholders, in order to refocus teams on revenue producing activities.",
+      links: {
+        github: "https://github.com/ZionMiller/summary_copilot",
+      },
+      techUsed: ["Python", "Aws Lambda", "OpenAI API", "MongoDB"]
+    },
+    smallest_triangle: {
+      title: "Smallest Tetrahedron",
+      description: "Python service which ingests .txt files containing n number of entries consisting of 3 floats and an int. Smallest Tetrahedron will process these TXT files and determine the smallest valid entry present in the file.",
+      links: {
+        github: "https://github.com/ZionMiller/find_small_tetrahedron",
+      },
+      techUsed: ["Python"]
+    },
+    ruby_faker: {
+      title: "Ruby Faker",
+      description: "Contributed a global airport information generator, with accompanying tests to Ruby Faker, to enable seeding for travel apps",
+      links: {
+        github: "https://github.com/faker-ruby/faker/pull/2682",
+        medium: "https://medium.com/@zionmiller/contributing-to-faker-97582603d050"
+      },
+      techUsed: ["React", "Python", "Aws", "PostgreSQL", "MongoDB"]
+    },
+    cpr_santa_fe: {
+      title: "CPR Class NM",
+      description: "Informational and booking site for CPR Santa Fe, incorporating existing Square Space shop for payments, and scheduling via a Python service.",
+      links: {
+        deployed_url: "https://cprclassnm.com/",
+        github: "https://github.com/ZionMiller/cpr-santafe"
+      },
+      techUsed: ["Next.JS", "Python", "Aws", "PostgreSQL"]
     },
     flightFinder: {
       title: "Flight Finder",
@@ -48,7 +91,7 @@ const profileData = {
       links: {
         github: "https://github.com/Garret-Gallant/Phase-3-Project-Backend",
       },
-      techUsed: ["React", "Rails"]
+      techUsed: ["React", "Rails", "PostgreSQL"]
     },
     coderCheatSheet: {
       title: "Coder's Keys",

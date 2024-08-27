@@ -13,8 +13,8 @@ const BlogFeed = () => {
   }, []);
 
   return (
-    <section id="articles" className="py-16 bg-slate-100">
-      <div className="container mx-auto px-20">
+    <section id="articles" className="py-16 bg-gray-200">
+      <div className="container mx-auto sm:px-8 md:px-10 lg:px-20">
         <h2 className="text-3xl font-bold text-center mb-12">Articles</h2>
         <div className="space-y-8">
           {articles.map((article, index) => (

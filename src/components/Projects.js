@@ -1,37 +1,38 @@
 import profileData from '../utils/me';
 import { techIcons } from '../utils/techIcons';
-import { FaGithub, FaYoutube } from 'react-icons/fa';
+import { FaGithub, FaYoutube, FaMedium } from 'react-icons/fa';
 
 const Projects = () => {
 
   return (
-    <div id="projects">
-      <div className="container py-16 mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Projects</h2>
-        <div className="grid gap-8 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
+    <div id="projects" className='container mx-auto sm:px-8 md:px-10 lg:px-20'>
+      <div className="mt-10">
+        <h2 className="text-3xl font-bold text-center mb-12">Recent Projects</h2>
+        <div className="grid gap-8 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
           {Object.entries(profileData.projects).map(([key, project]) => (
             <div
               key={key}
-              className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100 transition-transform transform hover:scale-105 hover:bg-gray-100"
+              className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 transition-transform transform hover:scale-105 hover:bg-gray-100"
             >
               <div className="p-6">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-2xl font-bold">{project.title}</h3>
-                  {project.techUsed && (
-                    <div className="flex items-center space-x-2">
-                      {project.techUsed.map((tech, index) => (
-                        <div key={index} className="flex items-center">
-                          {techIcons[tech] || <span>{tech}</span>}
-                        </div>
-                      ))}
-                    </div>
-                  )}
+                <div className="flex items-center justify-between mb-2 p-2 border-b border-gray-300">
+                  <h3 className="text-2xl font-bold">
+                    {project.title}
+                  </h3>
+                  <div className="flex items-center space-x-2">
+                    {project.techUsed && project.techUsed.map((tech, index) => (
+                      <div key={index} className="flex items-center">
+                        {techIcons[tech] || <span>{tech}</span>}
+                      </div>
+                    ))}
+                  </div>
                 </div>
-                <p className="text-gray-600 mb-4">{project.description}</p>
-                <hr className="my-4 border-gray-300" />
-                <div className="mb-4 flex items-center space-x-4">
-                  <p className="text-sm font-semibold mr-4">Project Links:</p>
-                  <div className="flex space-x-4">
+                <p className="text-gray-600 mb-4 p-2 text-lg">
+                  {project.description}
+                </p>
+                <div>
+                  <div className="flex items-center space-x-2 p-2">
+                    <p className="text-sm font-semibold">Links:</p>
                     {project.links.github && typeof project.links.github === 'string' && (
                       <a
                         href={project.links.github}
@@ -41,6 +42,17 @@ const Projects = () => {
                         aria-label="GitHub"
                       >
                         <FaGithub size={24} style={{ color: '#333' }} />
+                      </a>
+                    )}
+                    {project.links.medium && typeof project.links.medium === 'string' && (
+                      <a
+                        href={project.links.medium}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-700 hover:text-gray-900"
+                        aria-label="GitHub"
+                      >
+                        <FaMedium size={24} style={{ color: '#333' }} />
                       </a>
                     )}
                     {project.links.github && typeof project.links.github === 'object' && (
@@ -80,13 +92,28 @@ const Projects = () => {
                         <FaYoutube size={24} style={{ color: '#FF0000' }} />
                       </a>
                     )}
+                    {project.links.deployed_url && (
+                      <a
+                        href={project.links.deployed_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-500 underline hover:text-blue-700"
+                      >
+                        {project.title}
+                      </a>
+                    )}
+                    {project.links.notes && (
+                      <span className="text-gray-600">
+                        {project.links.notes}
+                      </span>
+                    )}
                   </div>
                 </div>
               </div>
             </div>
           ))}
         </div>
-        <div className="flex justify-center mt-20">
+        <div className="flex justify-center mt-10 mb-10">
           <a
             href={profileData.socials.github}
             target="_blank"
@@ -97,7 +124,7 @@ const Projects = () => {
           </a>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

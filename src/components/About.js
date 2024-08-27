@@ -6,9 +6,9 @@ import profileData from '../utils/me';
 
 const About = () => {
   return (
-    <div id="about" className="relative overflow-hidden">
+    <div id="about" className='mx-auto sm:px-8 md:px-10 lg:px-20'>
       <div className="max-w-8xl mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between">
-        <div className="relative w-full lg:w-1/2 flex justify-center lg:pr-20 lg:py-6 md:py-8 sm:py-4">
+        <div className="relative w-full lg:w-1/2 flex justify-center mt-6"> 
           <div className="w-full max-w-xs lg:max-w-sm h-80 lg:h-full overflow-hidden rounded-lg">
             <img
               className="w-full h-full object-cover object-center rounded-lg"
@@ -17,16 +17,16 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="relative lg:w-1/2 lg:pl-12 mb-10 lg:mr-10">
-          <main className="mt-24 px-4 sm:mt-28 sm:px-6 md:mt-32 lg:mt-36 lg:px-0">
-            <div className="sm:text-center lg:text-left mb-20">
-              <h2 className="my-12 text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl">
-                About {profileData.name}:
+        <div className="relative lg:w-1/2 mb-4 mt-2">
+          <main className="mt-2 px-4 sm:mt-4 sm:px-6 md:mt-32 lg:mt-10 lg:px-0">
+            <div className="sm:text-center lg:text-left">
+              <h2 className="my-4 text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl">
+                About Me
               </h2>
               <p className="text-lg text-gray-700">
-                {profileData.bio}
+                My name is {profileData.name}. I'm a {profileData.bio}
               </p>
-              <div className="flex justify-center lg:justify-start mt-12 space-x-6">
+              <div className="flex justify-center lg:justify-start mt-4 space-x-6">
                 {profileData.socials?.linkedIn && (
                   <a
                     href={profileData.socials.linkedIn}
