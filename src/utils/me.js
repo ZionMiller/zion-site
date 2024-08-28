@@ -1,6 +1,6 @@
 const profileData = {
   name: "Zion Miller",
-  bio: "Results-driven software engineer with 2+ years of experience collaborating in full-stack development, cloud computing, and AI integration. I have a proven track record in designing, developing, deploying and maintaining scalable applications using modern technologies.",
+  bio: "results-driven software engineer with 2+ years of experience collaborating in full-stack development, cloud computing, and AI integration. I have a proven track record in designing, developing, deploying and maintaining scalable applications using modern technologies.",
   email: "zionmillerbusiness@gmail.com",
   topSkills: [
     "Python", "JavaScript", "Postgresql", "AWS"
