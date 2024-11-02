@@ -12,7 +12,7 @@ const About = () => {
             <div className="w-full max-w-md lg:max-w-lg lg:h-full overflow-hidden rounded-lg mb-6">
               <img
                 className="w-full h-full object-cover object-center rounded-lg"
-                src="/zion-headshot.jpg"
+                src="/goldenboy.jpg"
                 alt="Zion Miller Headshot"
               />
             </div>
